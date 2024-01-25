@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''A simple Flask web application.
 '''
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
@@ -12,7 +12,7 @@ app.url_map.strict_slashes = False
 @app.route('/')
 def index():
     '''The home page.'''
-    return 'Hello HBNB!'
+    return render-template '10-hbnb_filters.py!'
 
 
 if __name__ == '__main__':
